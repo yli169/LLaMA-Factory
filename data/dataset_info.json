@@ -730,5 +730,22 @@
       "prompt": "content"
     },
     "folder": "python"
+  },
+  "coder_summarizer_train": {
+    "file_name": "coder_summarizer_train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "coder_summarizer_eval": {
+    "file_name": "coder_summarizer_eval.json"
   }
 }
