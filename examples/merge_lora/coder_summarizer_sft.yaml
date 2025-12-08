@@ -7,7 +7,7 @@ template: qwen3
 trust_remote_code: true
 
 ### export
-export_dir: output/coder_summarizer_sft_lora
+export_dir: /mnt/nvme/home/zr/models/coder_summarizer_sft_lora
 export_size: 17
 export_device: auto
 export_legacy_format: false
