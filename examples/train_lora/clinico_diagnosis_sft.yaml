@@ -11,16 +11,16 @@ lora_rank: 8
 lora_alpha: 16
 lora_dropout: 0.05
 lora_target: ["q_proj", "k_proj", "v_proj", "o_proj"]
-flash_attn: "auto"
+flash_attn: fa2
 
 ### dataset
-dataset: training_diagnosis,training_admission,training_bhc,training_pathology
+dataset: training_diagnosis
 cutoff_len: 16384
 overwrite_cache: true
 preprocessing_num_workers: 8
 
 ### output
-output_dir: "outputs/summarizer_sft_lora"
+output_dir: "outputs/clinico_diagnosis_sft_lora"
 logging_steps: 10
 save_steps: 500
 plot_loss: true
