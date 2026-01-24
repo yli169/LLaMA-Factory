@@ -7,20 +7,20 @@ stage: "sft"
 do_train: true
 template: "qwen3"
 finetuning_type: "lora"
-lora_rank: 16
-lora_alpha: 32
+lora_rank: 8
+lora_alpha: 16
 lora_dropout: 0.05
 lora_target: ["q_proj", "k_proj", "v_proj", "o_proj"]
 flash_attn: "auto"
 
 ### dataset
-dataset: "coder_summarizer_train"
+dataset: training_diagnosis,training_admission,training_bhc,training_pathology
 cutoff_len: 16384
 overwrite_cache: true
 preprocessing_num_workers: 8
 
 ### output
-output_dir: "outputs/coder_summarizer_sft"
+output_dir: "outputs/summarizer_sft_lora"
 logging_steps: 10
 save_steps: 500
 plot_loss: true
@@ -32,7 +32,7 @@ report_to: "none"
 per_device_train_batch_size: 1 
 gradient_accumulation_steps: 8
 learning_rate: 5.0e-5
-num_train_epochs: 1.0
+num_train_epochs: 2.0
 lr_scheduler_type: "cosine"
 warmup_ratio: 0.1
 bf16: true

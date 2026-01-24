@@ -731,8 +731,8 @@
     },
     "folder": "python"
   },
-  "coder_summarizer_train": {
-    "file_name": "coder_summarizer_train.json",
+  "training_diagnosis": {
+    "file_name": "training_diagnosis.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -745,7 +745,46 @@
       "assistant_tag": "assistant"
     }
   },
-  "coder_summarizer_eval": {
-    "file_name": "coder_summarizer_eval.json"
+  "training_admission": {
+    "file_name": "training_admission.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "training_bhc": {
+    "file_name": "training_bhc.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "training_pathology": {
+    "file_name": "training_pathology.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
   }
 }
