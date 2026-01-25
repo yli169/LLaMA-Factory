@@ -2,7 +2,7 @@
 
 ### model
 model_name_or_path: "/mnt/nvme/home/zr/models/Qwen3-32B/"
-adapter_name_or_path: outputs/clinico_writer_sft/
+adapter_name_or_path: outputs/clinico_writer_sft_lora/
 template: qwen3
 trust_remote_code: true
 
