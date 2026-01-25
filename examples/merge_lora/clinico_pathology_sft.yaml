@@ -2,12 +2,12 @@
 
 ### model
 model_name_or_path: "/mnt/nvme/home/zr/models/Qwen3-32B/"
-adapter_name_or_path: outputs/coder_summarizer_sft/
+adapter_name_or_path: outputs/clinico_pathology_sft/
 template: qwen3
 trust_remote_code: true
 
 ### export
-export_dir: /mnt/nvme/home/zr/models/coder_summarizer_sft_lora
+export_dir: /mnt/nvme/home/zr/models/clinico_pathology_sft_lora
 export_size: 17
 export_device: auto
 export_legacy_format: false
