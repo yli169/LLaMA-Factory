@@ -20,7 +20,7 @@ overwrite_cache: true
 preprocessing_num_workers: 8
 
 ### output
-output_dir: "outputs/clinico_pathology_sft_lora"
+output_dir: "outputs/clinico_pathology_sft_lora_0126"
 logging_steps: 100
 save_steps: 500
 plot_loss: true
