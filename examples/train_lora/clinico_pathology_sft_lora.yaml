@@ -21,7 +21,7 @@ preprocessing_num_workers: 8
 
 ### output
 output_dir: "outputs/clinico_pathology_sft_lora"
-logging_steps: 100
+logging_steps: 30
 save_steps: 500
 plot_loss: true
 overwrite_output_dir: true
