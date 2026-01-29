@@ -10,15 +10,13 @@ finetuning_type: "lora"
 lora_rank: 16
 lora_alpha: 32
 lora_dropout: 0.05
-lora_target: ["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"]
+lora_target: ["q_proj","k_proj","v_proj","o_proj"]
 flash_attn: fa2
-enable_liger_kernel: true 
 
 ### dataset
 dataset: training_diagnosis
 cutoff_len: 8192
 preprocessing_num_workers: 8
-tokenized_path: "data/tokenized/training_diagnosis_qwen25_8k"
 
 ### output
 output_dir: "outputs/clinico_diagnosis_sft_lora"
