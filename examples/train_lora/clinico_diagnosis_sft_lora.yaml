@@ -18,8 +18,6 @@ enable_liger_kernel: true
 dataset: training_diagnosis
 cutoff_len: 8192
 preprocessing_num_workers: 8
-packing: null
-neat_packing: true
 tokenized_path: "data/tokenized/training_diagnosis_qwen25_8k"
 
 ### output
