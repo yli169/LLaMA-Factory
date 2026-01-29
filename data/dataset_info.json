@@ -774,7 +774,7 @@
     }
   },
   "training_pathology": {
-    "file_name": "training_pathology.json",
+    "file_name": "train_pathology",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
