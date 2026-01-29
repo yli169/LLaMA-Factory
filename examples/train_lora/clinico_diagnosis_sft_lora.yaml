@@ -12,12 +12,15 @@ lora_alpha: 32
 lora_dropout: 0.05
 lora_target: ["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"]
 flash_attn: fa2
+enable_liger_kernel: true 
 
 ### dataset
 dataset: training_diagnosis
-cutoff_len: 16384
-overwrite_cache: true
+cutoff_len: 8192
 preprocessing_num_workers: 8
+packing: null
+neat_packing: true
+tokenized_path: "data/tokenized/training_diagnosis_qwen25_8k"
 
 ### output
 output_dir: "outputs/clinico_diagnosis_sft_lora"
@@ -29,8 +32,8 @@ save_only_model: false
 report_to: "none"
 
 ### train
-per_device_train_batch_size: 1 
-gradient_accumulation_steps: 8
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 2
 learning_rate: 3.0e-5
 num_train_epochs: 3.0
 lr_scheduler_type: "cosine"
