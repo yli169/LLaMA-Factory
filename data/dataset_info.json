@@ -732,7 +732,7 @@
     "folder": "python"
   },
   "training_diagnosis": {
-    "file_name": "training_diagnosis.json",
+    "file_name": "train_diagnosis",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
