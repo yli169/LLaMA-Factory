@@ -1,5 +1,5 @@
 ### model
-model_name_or_path: "/mnt/nvme/home/zr/models/Qwen2.5-32B-Instruct/"
+model_name_or_path: "/mnt/nvme/home/zr/models/Qwen2.5-32B-Instruct"
 trust_remote_code: true
 
 ### method
