@@ -37,5 +37,3 @@ warmup_ratio: 0.1
 bf16: true
 ddp_timeout: 180000000
 resume_from_checkpoint: null
-
-kill -9 4024253
