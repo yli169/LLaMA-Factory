@@ -1,7 +1,7 @@
 {
-  "train_batch_size": "auto",
-  "train_micro_batch_size_per_gpu": "auto",
-  "gradient_accumulation_steps": "auto",
+  "train_batch_size": "32",
+  "train_micro_batch_size_per_gpu": "1",
+  "gradient_accumulation_steps": "8",
   "gradient_clipping": "auto",
   "zero_allow_untested_optimizer": true,
   "fp16": {
@@ -16,13 +16,12 @@
     "enabled": "auto"
   },
   "zero_optimization": {
-    "stage": 0,
-    "allgather_partitions": true,
-    "allgather_bucket_size": 1e9,
-    "overlap_comm": false,
-    "reduce_scatter": true,
-    "reduce_bucket_size": 1e9,
+    "stage": 2,
     "contiguous_gradients": true,
-    "round_robin_gradients": true
+    "overlap_comm": true,
+    "reduce_scatter": true,
+    "allgather_partitions": true,
+    "reduce_bucket_size": 5e8,
+    "allgather_bucket_size": 5e8
   }
 }
