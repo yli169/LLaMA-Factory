@@ -19,7 +19,7 @@ cutoff_len: 8192
 preprocessing_num_workers: 8
 
 ### output
-output_dir: "/mnt/nfs//outputs/clinico_diagnosis_in_discharge_sft_lora"
+output_dir: "/mnt/nfs/outputs/clinico_diagnosis_in_discharge_sft_lora"
 logging_steps: 30
 save_steps: 500
 plot_loss: false
@@ -39,5 +39,4 @@ ddp_timeout: 180000000
 resume_from_checkpoint: null
 
 dataloader_num_workers: 4
-deepspeed: examples/deepspeed/ds_z0_config.json
 dataloader_pin_memory: true
