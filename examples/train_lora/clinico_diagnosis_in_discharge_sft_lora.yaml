@@ -1,0 +1,43 @@
+### model
+model_name_or_path: "/mnt/nvme/home/zr/models/Qwen2.5-32B-Instruct"
+trust_remote_code: true
+
+### method
+stage: "sft"
+do_train: true
+template: "qwen"
+finetuning_type: "lora"
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target: ["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"]
+flash_attn: fa2
+
+### dataset
+dataset: training_diagnosis_in_discharge
+cutoff_len: 8192
+preprocessing_num_workers: 8
+
+### output
+output_dir: "outputs/clinico_diagnosis_in_discharge_sft_lora"
+logging_steps: 30
+save_steps: 500
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: false
+report_to: "none"
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 3.0e-5
+num_train_epochs: 1.0
+lr_scheduler_type: "cosine"
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+resume_from_checkpoint: null
+
+dataloader_num_workers: 20
+deepspeed: examples/deepspeed/ds_z0_config.json
+dataloader_pin_memory: true

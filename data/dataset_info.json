@@ -745,6 +745,20 @@
       "assistant_tag": "assistant"
     }
   },
+  "training_diagnosis_in_discharge": {
+    "file_name": "train_diagnosis_in_discharge",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
   "training_admission": {
     "file_name": "training_admission.json",
     "formatting": "sharegpt",
