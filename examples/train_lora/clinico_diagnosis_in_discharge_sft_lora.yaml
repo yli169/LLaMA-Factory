@@ -38,6 +38,6 @@ bf16: true
 ddp_timeout: 180000000
 resume_from_checkpoint: null
 
-dataloader_num_workers: 20
+dataloader_num_workers: 4
 deepspeed: examples/deepspeed/ds_z0_config.json
 dataloader_pin_memory: true
