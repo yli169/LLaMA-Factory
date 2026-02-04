@@ -16,7 +16,7 @@
     "enabled": "auto"
   },
   "zero_optimization": {
-    "stage": 2,
+    "stage": 0,
     "contiguous_gradients": true,
     "overlap_comm": true,
     "reduce_scatter": true,

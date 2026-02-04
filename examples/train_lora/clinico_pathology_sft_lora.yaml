@@ -11,17 +11,19 @@ lora_rank: 16
 lora_alpha: 32
 lora_dropout: 0.05
 lora_target: ["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"]
+enable_liger_kernel: true
 flash_attn: fa2
 
 ### dataset
 dataset: training_pathology
 cutoff_len: 4096
 preprocessing_num_workers: 8
+packing: true
 
 ### output
 output_dir: "outputs/clinico_pathology_sft_lora"
-logging_steps: 30
-save_steps: 500
+logging_steps: 100
+save_steps: 1000
 plot_loss: false
 overwrite_output_dir: true
 save_only_model: true
@@ -37,7 +39,8 @@ warmup_ratio: 0.1
 bf16: true
 ddp_timeout: 180000000
 resume_from_checkpoint: null
+optim: "adamw_torch_fused"
 
-dataloader_num_workers: 20
+dataloader_num_workers: 8
 deepspeed: examples/deepspeed/ds_z0_config.json
 dataloader_pin_memory: true
