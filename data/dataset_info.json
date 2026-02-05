@@ -773,8 +773,8 @@
       "assistant_tag": "assistant"
     }
   },
-  "training_scriber": {
-    "file_name": "training_scriber",
+  "train_scriber": {
+    "file_name": "train_scriber",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
