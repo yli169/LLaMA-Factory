@@ -773,8 +773,8 @@
       "assistant_tag": "assistant"
     }
   },
-  "training_bhc": {
-    "file_name": "training_bhc.json",
+  "training_scriber": {
+    "file_name": "training_scriber",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
