@@ -7,10 +7,10 @@ stage: "sft"
 do_train: true
 template: "qwen"
 finetuning_type: "lora"
-lora_rank: 8
-lora_alpha: 16
+lora_rank: 16
+lora_alpha: 32
 lora_dropout: 0.05
-lora_target: ["q_proj", "k_proj", "v_proj", "o_proj"]
+lora_target: ["q_proj", "k_proj", "v_proj", "o_proj","gate_proj","up_proj","down_proj"]
 enable_liger_kernel: true
 flash_attn: fa2
 
@@ -22,7 +22,7 @@ preprocessing_num_workers: 8
 packing: true
 
 ### output
-output_dir: "outputs/clinico_scriber_sft_lora"
+output_dir: "outputs/clinico_scriber_sft_lora_1632full"
 logging_steps: 100
 save_steps: 1000
 plot_loss: false
