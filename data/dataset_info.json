@@ -800,5 +800,19 @@
       "user_tag": "user",
       "assistant_tag": "assistant"
     }
+  },
+  "train_arbiter": {
+    "file_name": "train_arbiter",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
   }
 }
