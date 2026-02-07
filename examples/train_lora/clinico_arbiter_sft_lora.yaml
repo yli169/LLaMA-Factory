@@ -15,7 +15,7 @@ enable_liger_kernel: true
 flash_attn: fa2
 
 ### dataset
-dataset: train_arbiter
+dataset: train_arbiter_sft
 cutoff_len: 2048
 overwrite_cache: true
 preprocessing_num_workers: 8

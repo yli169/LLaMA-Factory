@@ -801,8 +801,8 @@
       "assistant_tag": "assistant"
     }
   },
-  "train_arbiter": {
-    "file_name": "train_arbiter",
+  "train_arbiter_sft": {
+    "file_name": "train_arbiter_sft",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
