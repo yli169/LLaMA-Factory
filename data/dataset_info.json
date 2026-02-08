@@ -801,6 +801,20 @@
       "assistant_tag": "assistant"
     }
   },
+  "train_clinical_parser_sft": {
+    "file_name": "train_clinical_parser_sft",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
   "train_arbiter_sft": {
     "file_name": "train_arbiter_sft",
     "formatting": "sharegpt",
