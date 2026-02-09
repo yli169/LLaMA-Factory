@@ -15,7 +15,7 @@ flash_attn: fa2
 
 ### dataset
 dataset: train_clinical_parser_sft
-cutoff_len: 8192
+cutoff_len: 4096
 preprocessing_num_workers: 8
 packing: true
 
@@ -41,5 +41,5 @@ resume_from_checkpoint: null
 optim: "adamw_torch_fused"
 
 dataloader_num_workers: 8
-deepspeed: examples/deepspeed/ds_z3_config.json
+deepspeed: examples/deepspeed/ds_z2_config.json
 dataloader_pin_memory: true
