@@ -18,7 +18,7 @@ flash_attn: fa2
 dataset: train_arbiter_sft
 cutoff_len: 4096
 overwrite_cache: true
-preprocessing_num_workers: 8
+preprocessing_num_workers: 16
 packing: true
 
 ### output
@@ -41,8 +41,7 @@ bf16: true
 ddp_timeout: 180000000
 resume_from_checkpoint: null
 optim: "adamw_torch_fused"
-use_unsloth: true
 
-dataloader_num_workers: 8
+dataloader_num_workers: 16
 deepspeed: examples/deepspeed/ds_z2_config.json
 dataloader_pin_memory: true
