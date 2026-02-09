@@ -31,7 +31,7 @@ save_only_model: true
 report_to: "none"
 
 ### train
-per_device_train_batch_size: 16
+per_device_train_batch_size: 32
 gradient_accumulation_steps: 1
 learning_rate: 5.0e-5
 num_train_epochs: 2.0
@@ -41,7 +41,8 @@ bf16: true
 ddp_timeout: 180000000
 resume_from_checkpoint: null
 optim: "adamw_torch_fused"
+use_unsloth: true
 
 dataloader_num_workers: 8
-deepspeed: examples/deepspeed/ds_z3_config.json
+deepspeed: examples/deepspeed/ds_z2_config.json
 dataloader_pin_memory: true
