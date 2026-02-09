@@ -12,7 +12,6 @@ lora_alpha: 32
 lora_dropout: 0.05
 lora_target: ["q_proj","k_proj","v_proj","o_proj"]
 flash_attn: fa2
-compute_dtype: bf16
 
 ### dataset
 dataset: train_clinical_parser_sft
