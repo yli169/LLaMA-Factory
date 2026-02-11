@@ -5,7 +5,7 @@ template: qwen
 trust_remote_code: true
 
 ### export
-export_dir: /mnt/nfs/outputs/clinico_arbiter_sft_lora
+export_dir: /mnt/nfs/outputs/clinico_arbiter_sft_lora_0211
 export_size: 17
 export_device: auto
 export_legacy_format: false
