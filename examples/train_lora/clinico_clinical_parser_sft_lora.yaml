@@ -10,12 +10,12 @@ finetuning_type: "lora"
 lora_rank: 16
 lora_alpha: 32
 lora_dropout: 0.05
-lora_target: ["q_proj","k_proj","v_proj","o_proj"]
+lora_target: ["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"]
 flash_attn: fa2
 
 ### dataset
 dataset: train_clinical_parser_sft
-cutoff_len: 8192
+cutoff_len: 4096
 preprocessing_num_workers: 16
 packing: true
 
