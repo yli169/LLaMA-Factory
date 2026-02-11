@@ -1,0 +1,47 @@
+### model
+model_name_or_path: "/mnt/nvme/home/zr/models/Qwen3-30B-A3B-Thinking-2507"
+trust_remote_code: true
+
+### method
+stage: "sft"
+do_train: true
+template: "qwen3"
+finetuning_type: "lora"
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target: ["q_proj", "k_proj", "v_proj", "o_proj","gate_proj","up_proj","down_proj"]
+enable_liger_kernel: true
+flash_attn: fa2
+
+### dataset
+dataset: train_arbiter_moe_sft
+cutoff_len: 8192
+overwrite_cache: true
+preprocessing_num_workers: 16
+packing: true
+
+### output
+output_dir: "outputs/clinico_arbiter_sft_lora"
+logging_steps: 100
+save_steps: 1000
+plot_loss: false
+overwrite_output_dir: true
+save_only_model: true
+report_to: "none"
+
+### train
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 1
+learning_rate: 5.0e-5
+num_train_epochs: 2.0
+lr_scheduler_type: "cosine"
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+resume_from_checkpoint: null
+optim: "adamw_torch_fused"
+
+dataloader_num_workers: 16
+deepspeed: examples/deepspeed/ds_z2_config.json
+dataloader_pin_memory: true
