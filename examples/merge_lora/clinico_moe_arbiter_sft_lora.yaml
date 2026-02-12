@@ -1,5 +1,5 @@
 ### model
-model_name_or_path: "/mnt/nvme/home/zr/models/Qwen2.5-32B-Instruct/"
+model_name_or_path: "/mnt/nvme/home/zr/models/Qwen3-30B-A3B-Thinking-2507/"
 adapter_name_or_path: outputs/clinico_moe_arbiter_sft_lora/
 template: qwen
 trust_remote_code: true
