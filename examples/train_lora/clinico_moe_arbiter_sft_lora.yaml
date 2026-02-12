@@ -22,7 +22,7 @@ preprocessing_num_workers: 16
 packing: true
 
 ### output
-output_dir: "outputs/clinico_arbiter_sft_lora"
+output_dir: "outputs/clinico_moe_arbiter_sft_lora"
 logging_steps: 100
 save_steps: 1000
 plot_loss: false
