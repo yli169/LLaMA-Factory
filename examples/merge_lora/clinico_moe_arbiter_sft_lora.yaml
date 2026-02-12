@@ -1,0 +1,11 @@
+### model
+model_name_or_path: "/mnt/nvme/home/zr/models/Qwen2.5-32B-Instruct/"
+adapter_name_or_path: outputs/clinico_moe_arbiter_sft_lora/
+template: qwen
+trust_remote_code: true
+
+### export
+export_dir: /mnt/nfs/outputs/clinico_moe_arbiter_sft_lora
+export_size: 17
+export_device: auto
+export_legacy_format: false
